@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 30px 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #000;
+    display: block;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4e4b5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color: #fff;
+}
+
+.borrar{
+    background-color: #000;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/*INICIO*/
+
+.header-content-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-text{
+    flex-basis: 50%;
+    text-align: centers;
+}
+
+.header-text h1{
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.header-text p{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/*SLIDER*/
+
+
+
+
+/*section mujer */
+
+.productos-container-mujer{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.productos-container-mujer h2{
+    color: #000;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.producto-container-mujer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+.producto-mujer{
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgb(0, 0, 0,0.1);
+}
+
+.producto-mujer img{
+    width: 250px;
+    height: 370px;
+    margin-bottom: 20px;
+}
+
+.producto-mujer h3{
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.producto-mujer p, .precio{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.precio{
+    font-weight: 800;
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/*section hombre */
+
+.productos-container-hombre{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.productos-container-hombre h2{
+    color: #000;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.producto-container-hombre{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+.producto-hombre{
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgb(0, 0, 0,0.1);
+}
+
+.producto-hombre img{
+    width: 250px;
+    height: 370px;
+    margin-bottom: 20px;
+}
+
+.producto-hombre h3{
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.producto-hombre p, .precio{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.precio{
+    font-weight: 800;
+}
+
+
+/*section descuento */
+
+.productos-container-descuento{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.productos-container-descuento h2{
+    color: #000;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.producto-container-descuento{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+.producto-descuento{
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgb(0, 0, 0,0.1);
+}
+
+.producto-descuento img{
+    width: 250px;
+    height: 370px;
+    margin-bottom: 20px;
+}
+
+.producto-descuento h3{
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.producto-descuento p, .precio{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.precio{
+    font-weight: 800;
+}
+
+/*section nosotros */
+
+.nosotros-content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0 200px;
+}
+
+.nosotros-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.nosotros-text{
+    flex-basis: 50%;
+    text-align: centers;
+}
+
+.nosotros-text h1{
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.nosotros-text p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*section footer */
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container-footer{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Responsive */
+
+@media (max-width:991px) {
+    
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: #fff;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .submenu:hover #carrito {
+        min-width: 100%;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content-container {
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .header-text {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 70px;
+    }
+
+    /* Mujer */
+
+    .productos-container-mujer {
+        padding:  0 30px 30px 30px;
+    }
+
+    .productos-container-mujer h2 {
+        margin-bottom: 30px;
+    }
+
+    .producto-container-mujer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .producto-container-mujer img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Hombre */ 
+
+    .productos-container-hombre {
+        padding:  0 30px 30px 30px;
+    }
+
+    .productos-container-hombre h2 {
+        margin-bottom: 30px;
+    }
+
+    .producto-container-hombre {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .producto-container-hombre img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Descuento */
+    
+    .productos-container-descuento {
+        padding:  0 30px 30px 30px;
+    }
+
+    .productos-container-descuento h2 {
+        margin-bottom: 30px;
+    }
+
+    .producto-container-descuento {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .producto-container-descuento img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Nosotros*/
+    
+    .nosotros-content-container {
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .nosotros-img {
+        display: none;
+    }
+
+    .nosotros-text {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .nosotros-text h1 {
+        font-size: 70px;
+    }
+}
